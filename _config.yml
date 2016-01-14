@@ -12,5 +12,5 @@ url: "http://fragglerocks.rocks"
 markdown: kramdown
 
 # social settings
-twitter_username: isnotarobot
-github_username:  ericajs
+twitter_username:
+github_username:
