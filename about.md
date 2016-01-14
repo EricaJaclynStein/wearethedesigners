@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: "#fcgm"
 permalink: /about/
 ---
 
-## This is fraggle rock and we're here to make a mother fucking mess.
+# That's Right, Gma!
 
-This is the base Jekyll theme. You can find out more info about customization + basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This is the base Jekyll theme, it's not bad...but it's pretty bad. We gotta customize this piece of poop ASAP.
 
-Source code for Jekyll [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+[Source code](https://github.com/jekyll/jekyll) for Jekyll, if ya needs it.
