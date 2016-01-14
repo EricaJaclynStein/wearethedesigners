@@ -1,0 +1,16 @@
+title: Fraggle Rock
+description: > # this means to ignore newlines until "baseurl:"
+  This is fraggle rock and we're here to make a mother fucking mess.
+
+# the subpath of your site, e.g. /blog/
+baseurl: "" 
+
+# the base hostname & protocol for your site
+url: "http://fragglerocks.rocks" 
+
+# build settings
+markdown: kramdown
+
+# social settings
+twitter_username: isnotarobot
+github_username:  ericajs
