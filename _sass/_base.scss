@@ -1,36 +1,16 @@
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
-}
-
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+pre, ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-figure > img {
-    display: block;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 ul, ol {
@@ -41,71 +21,67 @@ ul, ol {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-}
-
 a {
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover {
     color: $text-color;
     text-decoration: none;
-
-    &:hover {
-        color: $text-color;
-        text-decoration: none;
-    }
+  }
 }
 
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $helium;
-    border-radius: 3px;
-    background-color: #eef;
+  font-size: 15px;
+  border: 1px solid $helium;
+  border-radius: 3px;
+  background-color: #eef;
 }
 
 code {
-    padding: 1px 5px;
+  padding: 1px 5px;
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: auto;
+  padding: 8px 12px;
+  overflow-x: auto;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    margin-right: auto;
-    margin-left: auto;
-    padding: $spacing-unit;
-    @extend %clearfix;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+  margin-right: auto;
+  margin-left: auto;
+  padding: $spacing-unit;
+  @extend %clearfix;
 }
 
 %clearfix {
 
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .icon {
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
 
-        path {
-            fill: $deepspace;
-        }
+    path {
+      fill: $deepspace;
     }
+  }
 }

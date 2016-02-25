@@ -74,30 +74,20 @@
 
 .footer-list {
   font-size: $small-font-size;
-  font-weight: 700;
   list-style: none;
   margin-left: 0;
 
   a {
     border-bottom: 1px solid $deepspace;
     color: $text-color;
-    letter-spacing: 0.10em;
     padding: 0.15em;
     text-decoration: none;
 
     &:hover {
-      color: $text-color;
       border-bottom: 3px solid $deepspace;
       padding: 0.15em;
     }
   }
-}
-
-.social-list {
-  font-size: $small-font-size;
-  list-style: none;
-  margin-left: 0;
-  text-decoration: none;
 }
 
 .footer-row {
@@ -107,29 +97,6 @@
   min-height: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  overflow: hidden;
-  text-align: center;
-}
-
-.page-content {
-    color: $deepspace;
-    text-align: left;
-    padding: $spacing-unit 0;
-}
-
-.page-title {
-    font-size: 3em;
-    letter-spacing: 1px;
-    line-height: 1;
-}
-
-.page-row {
-  box-sizing: border-box;
-  position: relative;
-  box-sizing: border-box;
-  min-height: 1rem;
-  margin-bottom: 1rem;
-  padding: 2rem;
   overflow: hidden;
   text-align: center;
 }
@@ -162,7 +129,7 @@
 
     text {
       font-family: 'Pacifico', cursive;
-      font-size: 3em;
+      font-size: $h2;
       font-weight: 700;
       fill: $deepspace;
     }
@@ -179,33 +146,5 @@
 
     @include media-query($bp-sm-lap) {
         font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($bp-sm-lap) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($bp-sm-lap) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($bp-sm-lap) {
-            font-size: 18px;
-        }
     }
 }

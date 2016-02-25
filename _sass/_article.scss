@@ -1,0 +1,29 @@
+.article-content {
+    color: $deepspace;
+    text-align: left;
+    padding: $spacing-unit 0;
+}
+
+.article-title {
+    font-size: 3em;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.article-row {
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+@include media-query($bp-sm-lap) {
+  .article-row {
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+}

@@ -3,16 +3,13 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="footer-row">
+
           <ul class="footer-list">
-            <li><a href="{{ site.baseurl }}/">home</a></li>
-            {% for my_page in site.pages %}{% if my_page.title %}
-              <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-            {% endif %}{% endfor %}
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            {% for my_page in site.pages %}{% if my_page.title %}<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{% endif %}{% endfor %}
+            <li><small>{{ site.description }}</small></li>
           </ul>
-          <ul class="social-list">
-            <li><a href="http://www.twitter.com/ericajaclyn">{% include icon-twitter.html %}</a></li>
-            <li><p>{{ site.description }}</p></li>
-          </ul>
+
         </div>
       </div>
     </div>

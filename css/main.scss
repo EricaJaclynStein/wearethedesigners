@@ -7,10 +7,24 @@
   SITE FONTS
 ===================================================*/
 $base-font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$base-font-size:   16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.4rem;
+
+
+/*===================================================
+  TYPOGRAPHIC SCALE – PERFECT FOURTH
+===================================================*/
+$type-unit: 1.333;
+$type-ratio: 3 / 4;
+
+$small-font-size: $type-ratio;
+$base-font-size:  1rem;
+
+$h4: $base-font-size * $type-unit;
+$h3: $h4 * $type-unit;
+$h2: $h3 * $type-unit;
+$h1: $h2 * $type-unit;
+
+$base-line-height:    1.4rem;
 
 
 /*===================================================
@@ -56,8 +70,10 @@ $spacing-unit:     15px;
   GET DAT SASS
 ===================================================*/
 @import
+        "article",
         "base",
+        "default",
         "flexbox",
         "flexstyle",
-        "default",
-        "syntax-highlighting";
+        "syntax-highlighting",
+        "typography";
