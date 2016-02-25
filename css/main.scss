@@ -1,0 +1,63 @@
+---
+---
+@charset "utf-8";
+
+
+/*===================================================
+  SITE FONTS
+===================================================*/
+$base-font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.4rem;
+
+
+/*===================================================
+  COLORS, BABY!
+===================================================*/
+$text-color:       #1a1c23;
+$background-color: #fdfdfd;
+
+$redstar:     #FF0038;
+$cosmic:      #9f82ff;
+$solaris:     #7fcaff;
+$nebula:      #00ca8d;
+$supernova:   #12E3DB;
+$cantaloupe:  #ffcaa9;
+$helium:      #c7cbd9;
+$mercury:     #9da4bf;
+$iron:        #424858;
+$tungsten:    #252830;
+$deepspace:   #1a1c23;
+
+
+/*===================================================
+  SET RESPONSIVE UTILITIES
+===================================================*/
+$bp-sm-hand:  480px;
+$bp-lg-hand:  568px;
+$bp-sm-lap:   768px;
+$bp-lg-lap:   1024px;
+$bp-sm-desk:  1440px;
+$bp-lg-desk:  2560px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+$content-width:    800px;
+$spacing-unit:     15px;
+
+
+/*===================================================
+  GET DAT SASS
+===================================================*/
+@import
+        "base",
+        "flexbox",
+        "flexstyle",
+        "default",
+        "syntax-highlighting";
