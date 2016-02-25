@@ -1,4 +1,2 @@
-# This is Fraggle Rock
-**We are here to fraggle rock your world.**
-
-*dreamin the dream and then doin the dream*
+> ### Paper chasin’, tell that paper, "Look, I’m right behind ya".
+> ### Bitch, real Fraggle's move in silence like lasagna.
