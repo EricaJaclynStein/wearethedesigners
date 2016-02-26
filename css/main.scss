@@ -70,10 +70,11 @@ $spacing-unit:     15px;
   GET DAT SASS
 ===================================================*/
 @import
-        "article",
         "base",
         "default",
         "flexbox",
         "flexstyle",
+        "page",
+        "svgstyle",
         "syntax-highlighting",
         "typography";

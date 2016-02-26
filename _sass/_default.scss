@@ -112,29 +112,6 @@
   text-align: center;
 }
 
-.home-svg {
-    display: block;
-
-    > svg {
-        width: 200px;
-        height: 200px;
-        vertical-align: middle;
-      }
-
-      .c-mask {
-        fill: white;
-        stroke: white;
-        stroke-width: 1;
-      }
-
-    text {
-      font-family: 'Pacifico', cursive;
-      font-size: $h2;
-      font-weight: 700;
-      fill: $deepspace;
-    }
-}
-
 .post-header {
     margin-bottom: $spacing-unit;
 }

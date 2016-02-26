@@ -1,0 +1,45 @@
+.text-svg {
+  display: block;
+  background: $deepspace;
+
+  > svg {
+    vertical-align: middle;
+  }
+
+  .text-mask {
+    fill: white;
+    stroke: white;
+    stroke-width: 1;
+  }
+
+  text {
+    font-family: $base-font-family;
+    font-size: $h1;
+    font-weight: 700;
+    fill: $deepspace;
+    text-anchor: middle;
+  }
+}
+
+.shape-svg {
+  display: block;
+
+  > svg {
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+  }
+
+  .shape-mask {
+    fill: white;
+    stroke: white;
+    stroke-width: 1;
+  }
+
+  text {
+    font-family: 'Pacifico', cursive;
+    font-size: $h2;
+    font-weight: 700;
+    fill: $deepspace;
+  }
+}

@@ -14,30 +14,6 @@
 /*===================================================
   GET DAT SASS
 ===================================================*/
-.article-content {
-  color: #1a1c23;
-  text-align: left;
-  padding: 15px 0; }
-
-.article-title {
-  font-size: 3em;
-  letter-spacing: 1px;
-  line-height: 1; }
-
-.article-row {
-  box-sizing: border-box;
-  position: relative;
-  box-sizing: border-box;
-  min-height: 1rem;
-  margin-bottom: 1rem;
-  padding: 2rem;
-  overflow: hidden;
-  text-align: center; }
-
-@media screen and (max-width: 768px) {
-  .article-row {
-    margin-bottom: 0;
-    padding: 1rem; } }
 pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
@@ -195,22 +171,6 @@ pre {
   padding: 1rem;
   overflow: hidden;
   text-align: center; }
-
-.home-svg {
-  display: block; }
-  .home-svg > svg {
-    width: 200px;
-    height: 200px;
-    vertical-align: middle; }
-  .home-svg .c-mask {
-    fill: white;
-    stroke: white;
-    stroke-width: 1; }
-  .home-svg text {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.36859rem;
-    font-weight: 700;
-    fill: #1a1c23; }
 
 .post-header {
   margin-bottom: 15px; }
@@ -1250,6 +1210,62 @@ pre {
   .visible-md {
     display: block;
     visibility: visible; } }
+.page-content {
+  color: #1a1c23;
+  text-align: left;
+  padding: 15px 0; }
+
+.page-title {
+  font-size: 3em;
+  letter-spacing: 1px;
+  line-height: 1; }
+
+.page-row {
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  overflow: hidden;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .page-row {
+    margin-bottom: 0;
+    padding: 1rem; } }
+.text-svg {
+  display: block;
+  background: #1a1c23; }
+  .text-svg > svg {
+    vertical-align: middle; }
+  .text-svg .text-mask {
+    fill: white;
+    stroke: white;
+    stroke-width: 1; }
+  .text-svg text {
+    font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 3.15733rem;
+    font-weight: 700;
+    fill: #1a1c23;
+    text-anchor: middle; }
+
+.shape-svg {
+  display: block; }
+  .shape-svg > svg {
+    width: 200px;
+    height: 200px;
+    vertical-align: middle; }
+  .shape-svg .shape-mask {
+    fill: white;
+    stroke: white;
+    stroke-width: 1; }
+  .shape-svg text {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.36859rem;
+    font-weight: 700;
+    fill: #1a1c23; }
+
 /**
  * Syntax highlighting styles
  */

@@ -1,16 +1,16 @@
-.article-content {
+.page-content {
     color: $deepspace;
     text-align: left;
     padding: $spacing-unit 0;
 }
 
-.article-title {
+.page-title {
     font-size: 3em;
     letter-spacing: 1px;
     line-height: 1;
 }
 
-.article-row {
+.page-row {
   box-sizing: border-box;
   position: relative;
   box-sizing: border-box;
@@ -22,7 +22,7 @@
 }
 
 @include media-query($bp-sm-lap) {
-  .article-row {
+  .page-row {
     margin-bottom: 0;
     padding: 1rem;
   }
