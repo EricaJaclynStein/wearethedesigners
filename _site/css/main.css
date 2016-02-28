@@ -172,6 +172,13 @@ pre {
   overflow: hidden;
   text-align: center; }
 
+.pattern-box {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
 .post-header {
   margin-bottom: 15px; }
 
@@ -182,6 +189,9 @@ pre {
   @media screen and (max-width: 768px) {
     .post-title {
       font-size: 36px; } }
+
+iframe .widget {
+  border: none; }
 
 .container-fluid {
   margin-right: auto;
@@ -1136,7 +1146,6 @@ pre {
 .box {
   box-sizing: border-box;
   position: relative;
-  box-sizing: border-box;
   min-height: 1rem;
   margin-bottom: 0;
   padding: 1rem;
@@ -1188,6 +1197,10 @@ pre {
   display: block;
   visibility: visible; }
 
+.no-gutters {
+  padding: 0;
+  margin: 0; }
+
 /*===================================================
   SET STYLES FOR DEVICES @ 768px AND UP
 ===================================================*/
@@ -1235,9 +1248,10 @@ pre {
     margin-bottom: 0;
     padding: 1rem; } }
 .text-svg {
-  display: block;
-  background: #1a1c23; }
+  display: block; }
   .text-svg > svg {
+    width: 100%;
+    height: 200px;
     vertical-align: middle; }
   .text-svg .text-mask {
     fill: white;
@@ -1245,7 +1259,7 @@ pre {
     stroke-width: 1; }
   .text-svg text {
     font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 3.15733rem;
+    font-size: 4.20873rem;
     font-weight: 700;
     fill: #1a1c23;
     text-anchor: middle; }
@@ -1253,6 +1267,8 @@ pre {
 .shape-svg {
   display: block; }
   .shape-svg > svg {
+    border: 2px solid white;
+    border-radius: 50%;
     width: 200px;
     height: 200px;
     vertical-align: middle; }
@@ -1262,9 +1278,24 @@ pre {
     stroke-width: 1; }
   .shape-svg text {
     font-family: 'Pacifico', cursive;
-    font-size: 2.36859rem;
-    font-weight: 700;
-    fill: #1a1c23; }
+    font-size: 1.77689rem;
+    fill: #fff; }
+
+.pattern-svg {
+  align-items: flex-start;
+  display: block;
+  overflow: hidden;
+  vertical-align: middle; }
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  opacity: 1; }
 
 /**
  * Syntax highlighting styles

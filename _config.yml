@@ -1,11 +1,8 @@
-title: fraggle rock
-
+title: Fraggle Rock
 description: > # ""
-  made with ♡ down in fraggle rock
+  Made with ♡, down in fraggle rock.
 
 baseurl: ""
 url: "http://www.fragglerock.rocks"
-
-github_username:
 
 markdown: kramdown

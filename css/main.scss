@@ -18,11 +18,11 @@ $type-ratio: 3 / 4;
 
 $small-font-size: $type-ratio;
 $base-font-size:  1rem;
-
 $h4: $base-font-size * $type-unit;
 $h3: $h4 * $type-unit;
 $h2: $h3 * $type-unit;
 $h1: $h2 * $type-unit;
+$title: $h1 * $type-unit;
 
 $base-line-height:    1.4rem;
 
@@ -75,6 +75,6 @@ $spacing-unit:     15px;
         "flexbox",
         "flexstyle",
         "page",
-        "svgstyle",
+        "svg",
         "syntax-highlighting",
         "typography";
