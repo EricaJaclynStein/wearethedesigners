@@ -1,3 +1,82 @@
+/* The default size for HTML replaced elements is 300px wide, 150px tall
+This applies for <img>, <object>, <iframe>, and inline <svg>
+*/
+
+.text {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 10;
+}
+
+svg {
+  width: 100%;
+  height: inherit;
+
+  text {
+    text-anchor: middle;
+  }
+
+  #title {
+    letter-spacing: 1px;
+    font-size: 6em;
+    font-weight: 800;
+  }
+
+  #subtitle {
+    letter-spacing: 8px;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  #base {
+    fill: white;
+    stroke: white;
+    stroke-width: 1;
+    mask: url(#mask);
+  }
+}
+
+
+
+//////////////
+.test-svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 10;
+  display: block;
+}
+
+.text-mask {
+  fill: white;
+  stroke: white;
+  stroke-width: 1;
+}
+
+text {
+  font-family: $base-font-family;
+  font-size: $title;
+  font-weight: 700;
+  line-height: 0;
+  fill: $deepspace;
+  text-anchor: middle;
+}
+
+svg {
+  width: 100%;
+  height: inherit;
+
+  text {
+    text-anchor: middle;
+  }
+}
+
 .text-svg {
   display: block;
 
@@ -40,13 +119,16 @@
   }
 
   text {
-    font-family: 'Pacifico', cursive;
-    font-size: $h3;
+    font-family: $base-font-family;
+    font-size: $h4;
+    font-weight: bold;
     fill: #fff;
   }
 }
 
 .pattern-svg {
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
   align-items: flex-start;
   display: block;
   overflow: hidden;

@@ -1,3 +1,10 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
 pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
@@ -5,7 +12,7 @@ pre, hr, dl, dd, ol, ul, figure {
 
 pre, ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $base-spacing;
 }
 
 img {
@@ -14,29 +21,34 @@ img {
 }
 
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: $base-spacing;
 
   li {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $base-spacing / 2;
   }
 }
 
 a {
+  border-bottom: 2px solid $deepspace;
   color: $text-color;
+  padding: 0.10em;
   text-decoration: none;
 
   &:hover {
-    color: $text-color;
+    border-bottom: 3px solid $deepspace;
+    padding: 0.10em;
     text-decoration: none;
   }
 }
 
 pre,
 code {
-  font-size: 15px;
-  border: 1px solid $helium;
+  font-size: $small-font-size;
+  border: 1px solid $mercury;
   border-radius: 3px;
   background-color: #eef;
+  white-space: pre;
+  word-wrap: normal;
 }
 
 code {
@@ -54,12 +66,19 @@ pre {
   }
 }
 
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+.canvas {
   margin-right: auto;
   margin-left: auto;
-  padding: $spacing-unit;
+  overflow-x: hidden;
+  @extend %clearfix;
+}
+
+.wrapper {
+  max-width: -webkit-calc(#{$content-width} - (#{$base-spacing}));
+  max-width:         calc(#{$content-width} - (#{$base-spacing}));
+  margin-right: auto;
+  margin-left: auto;
+  padding: $base-spacing;
   @extend %clearfix;
 }
 

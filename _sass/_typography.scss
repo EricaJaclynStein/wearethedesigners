@@ -1,6 +1,12 @@
 /*===================================================
-  SET BASE
+  B A S E
 ===================================================*/
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
 body, h1, h2, h3, h4, p, small, blockquote {
   margin: 0;
   padding: 0;
@@ -8,7 +14,7 @@ body, h1, h2, h3, h4, p, small, blockquote {
 
 h1, h2, h3, h4, p, small, blockquote,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $base-spacing;
 }
 
 body {
@@ -25,7 +31,7 @@ body {
 
 
 /*===================================================
-  SPECIAL
+  S P E C I A L
 ===================================================*/
 code {
   color: #007FFF;
@@ -39,7 +45,7 @@ small {
 h1, h2, h3, h4 {
   font-weight: $base-font-weight;
   line-height: 1.1;
-  padding-top: $spacing-unit;
+  padding-top: $base-spacing;
 }
 
 h1 {

@@ -3,17 +3,19 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="footer-row">
-
           <ul class="footer-list">
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li>
+              <small><a href="{{ site.baseurl }}/">Home</a></small>
+            </li>
             {% for my_page in site.pages %}
             {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            <li>
+              <small><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></small>
+            </li>
             {% endif %}
             {% endfor %}
-            <li><small>{{ site.description }}</small></li>
+            <small>{{ site.description }}</small>
           </ul>
-
         </div>
       </div>
     </div>

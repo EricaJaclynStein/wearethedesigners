@@ -4,14 +4,14 @@
 
 
 /*===================================================
-  SITE FONTS
+  F O N T S
 ===================================================*/
 $base-font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $base-font-weight: 400;
 
 
 /*===================================================
-  TYPOGRAPHIC SCALE – PERFECT FOURTH
+  T Y P E S C A L E (PERFECT FOURTH)
 ===================================================*/
 $type-unit: 1.333;
 $type-ratio: 3 / 4;
@@ -28,9 +28,10 @@ $base-line-height:    1.4rem;
 
 
 /*===================================================
-  COLORS, BABY!
+  C O L O R S
 ===================================================*/
 $text-color:       #1a1c23;
+$alt-text-color:   #fdfdfd;
 $background-color: #fdfdfd;
 
 $redstar:     #FF0038;
@@ -39,15 +40,14 @@ $solaris:     #7fcaff;
 $nebula:      #00ca8d;
 $supernova:   #12E3DB;
 $cantaloupe:  #ffcaa9;
-$helium:      #c7cbd9;
-$mercury:     #9da4bf;
+$mercury:     #c7cbd9;
 $iron:        #424858;
 $tungsten:    #252830;
 $deepspace:   #1a1c23;
 
 
 /*===================================================
-  SET RESPONSIVE UTILITIES
+  R E S P O N D
 ===================================================*/
 $bp-sm-hand:  480px;
 $bp-lg-hand:  568px;
@@ -62,19 +62,17 @@ $bp-lg-desk:  2560px;
   }
 }
 
-$content-width:    800px;
-$spacing-unit:     15px;
+$content-width: 800px;
+$base-spacing:  1rem;
 
 
 /*===================================================
-  GET DAT SASS
+  I M P O R T
 ===================================================*/
 @import
-        "base",
-        "default",
-        "flexbox",
-        "flexstyle",
-        "page",
-        "svg",
-        "syntax-highlighting",
-        "typography";
+  "base",
+  "flexbox",
+  "svg",
+  "syntax-highlighting",
+  "typography",
+  "custom";
