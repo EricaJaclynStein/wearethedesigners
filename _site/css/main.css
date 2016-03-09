@@ -11,7 +11,7 @@
   R E S P O N D
 ===================================================*/
 /*===================================================
-  I M P O R T
+  I M P O R T S
 ===================================================*/
 body {
   box-sizing: border-box;
@@ -1500,6 +1500,26 @@ h4 {
   text-align: left;
   padding: 1rem 0; }
 
+.post-row {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1rem;
+  overflow: hidden;
+  text-align: center; }
+
+.col-post {
+  padding: 3rem 0 1rem 0; }
+
+.post-title-decor {
+  background: #000;
+  height: 0.5rem;
+  width: 230px; }
+
+.post-content {
+  color: #fdfdfd;
+  padding: 1rem 3rem;
+  text-align: left; }
+
 /*===================================================
   F O O T E R
 ===================================================*/
@@ -1516,35 +1536,14 @@ h4 {
   overflow: hidden;
   text-align: center; }
 
-.post-row {
-  box-sizing: border-box;
-  position: relative;
-  min-height: 1rem;
-  overflow: hidden;
-  text-align: center; }
-
 .col-auto {
   height: auto;
   padding: 1rem; }
-
-.col-post {
-  padding: 3rem 0 1rem 0; }
-
-.post-title-decor {
-  background: #000;
-  height: 0.5rem;
-  width: 230px; }
 
 .col-total {
   background: #1a1c23;
   height: 100vh;
   padding: 1rem; }
-
-.post-content {
-  border-left: 1px solid #9f82ff;
-  color: #fdfdfd;
-  padding: 1rem 3rem;
-  text-align: left; }
 
 /*===================================================
   D E V I C E S  >  768px
