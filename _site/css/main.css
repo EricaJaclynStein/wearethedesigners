@@ -939,9 +939,6 @@ pre {
     -ms-flex-order: 1;
     -webkit-box-ordinal-group: 2;
     order: 1; } }
-/* The default size for HTML replaced elements is 300px wide, 150px tall
-This applies for <img>, <object>, <iframe>, and inline <svg>
-*/
 .text {
   position: relative;
   top: 0;
@@ -954,12 +951,15 @@ svg {
   width: 100%;
   height: inherit; }
   svg text {
+    fill: white;
+    font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-anchor: middle; }
-  svg #title {
+  svg .tunes-title {
     letter-spacing: 1px;
-    font-size: 6em;
-    font-weight: 800; }
-  svg #subtitle {
+    font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 7em;
+    font-weight: 900; }
+  svg .tunes-subtitle {
     letter-spacing: 8px;
     font-size: 1.2em;
     font-weight: 300;
