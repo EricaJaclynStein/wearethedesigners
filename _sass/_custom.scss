@@ -9,6 +9,12 @@
   overflow: hidden;
 }
 
+#tunes-background {
+  background: url(../assets/geometry.png) center repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
 .no-gutters {
   padding: 0;
   margin: 0;
