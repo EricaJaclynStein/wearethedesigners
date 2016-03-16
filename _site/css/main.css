@@ -37,12 +37,13 @@ ul, ol {
     margin-bottom: 0.5rem; }
 
 a {
-  border-bottom: 2px solid #1a1c23;
-  color: #1a1c23;
+  border-bottom: 2px solid #ffcaa9;
+  color: #ffcaa9;
+  font-weight: bold;
   padding: 0.10em;
   text-decoration: none; }
   a:hover {
-    border-bottom: 3px solid #1a1c23;
+    border-bottom: 3px solid #ffcaa9;
     padding: 0.10em;
     text-decoration: none; }
 

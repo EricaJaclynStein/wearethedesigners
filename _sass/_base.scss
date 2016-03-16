@@ -29,13 +29,14 @@ ul, ol {
 }
 
 a {
-  border-bottom: 2px solid $deepspace;
-  color: $text-color;
+  border-bottom: 2px solid $cantaloupe;
+  color: $cantaloupe;
+  font-weight: bold;
   padding: 0.10em;
   text-decoration: none;
 
   &:hover {
-    border-bottom: 3px solid $deepspace;
+    border-bottom: 3px solid $cantaloupe;
     padding: 0.10em;
     text-decoration: none;
   }
