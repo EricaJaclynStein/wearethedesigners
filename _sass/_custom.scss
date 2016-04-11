@@ -190,38 +190,24 @@
 
 
 /*===================================================
-  H E A D E R
+  H E R O
 ===================================================*/
-.site-header {
-  background: transparent;
-  min-height: 45px;
-  position: relative;
-}
-
-.header-row {
-  box-sizing: border-box;
-  position: relative;
-  box-sizing: border-box;
-  min-height: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  overflow: hidden;
-  text-align: center;
-}
-
 .hero {
   box-sizing: border-box;
-  padding: 2rem;
-  background: $mercury;
+  border-bottom: 1px solid $mercury;
+  padding: 1rem;
 }
 
 .hero-headline {
-  -webkit-box-sizing: border-box;
   font-size: 3rem;
   font-weight: bold;
-  white-space: nowrap;
-  margin-bottom: 0;
-  padding: 2rem;
+  margin: 0;
+  padding: 1rem;
+
+  @media only screen and (min-width: $bp-sm-lap) {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .hero-copy {
@@ -364,11 +350,6 @@
   .page-row {
     margin-bottom: 0;
     padding: 1rem;
-  }
-
-  .hero-headline {
-    font-size: 6rem;
-    margin-bottom: 2rem;
   }
 
   .hero-copy {

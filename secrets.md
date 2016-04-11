@@ -4,6 +4,10 @@ title: Secrets
 permalink: /secrets/
 ---
 
+# H1 Typographic Scaling
+Paragraph. An attempt at making a modular typographic scale for mobile web experiences.
+
+
 # **Fuckyeah** MODERNIST *mobile* site design:
 
 ### Best Visual Design - Aesthetic + Function
