@@ -19,13 +19,12 @@ body {
   font-kerning: normal;
 }
 
-body, h1, h2, h3, h4, p, small, blockquote, pre, hr, dl, dd, ol, ul, figure {
+body, h1, h2, h3, h4, h5, h6, p, small, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, p, small, blockquote, pre, ul, ol, dl, figure,
-%vertical-rhythm {
+h1, h2, h3, h4, h5, h6 p, small, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
   margin-bottom: $base-spacing;
 }
 
@@ -35,33 +34,33 @@ img {
 }
 
 ul, ol {
-  margin-left: $base-spacing;
+  margin-bottom: $base-spacing;
 
   li {
-    margin-bottom: $base-spacing / 2;
+    margin-bottom: $base-spacing;
   }
 }
 
 a {
-  border-bottom: 2px solid $cantaloupe;
-  color: $cantaloupe;
-  font-weight: bold;
-  padding: 0.10em;
+  border-bottom: 3px solid $iron;
+  color: $iron;
+  font-weight: $base-font-weight;
+  padding: 0.10rem;
   text-decoration: none;
 
   &:hover {
     border-bottom: 3px solid $cantaloupe;
-    padding: 0.10em;
+    padding: 0.10rem;
     text-decoration: none;
   }
 }
 
-pre,
-code {
-  font-size: $small-font-size;
+pre, code {
+  font-size: $base-font-size;
   border: 1px solid $mercury;
   border-radius: 3px;
   background-color: #eef;
+  line-height: $base-line-height;
   white-space: pre;
   word-wrap: normal;
 }
@@ -79,6 +78,10 @@ pre {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+strong {
+  font-weight: $bold-font-weight;
 }
 
 .canvas {
