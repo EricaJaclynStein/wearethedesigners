@@ -8,17 +8,30 @@ Major Third Ratio
 /* C O L O R S ––––––––––––––––––––––––––––––––––––*/
 /* R E S P O N D  –––––––––––––––––––––––––––––––––*/
 /* I M P O R T  –––––––––––––––––––––––––––––––––––*/
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility; }
+
 body {
   box-sizing: border-box;
+  background-color: #fdfdfd;
+  color: #1a1c23;
   padding: 0;
   margin: 0;
-  background: #fff; }
+  font: 400 16px/1.563rem "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal; }
 
-pre, hr, dl, dd, ol, ul, figure {
+body, h1, h2, h3, h4, p, small, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
-pre, ul, ol, dl, figure,
+h1, h2, h3, h4, p, small, blockquote, pre, ul, ol, dl, figure,
 .highlight {
   margin-bottom: 1rem; }
 
@@ -1189,36 +1202,6 @@ img {
   .highlight .il {
     color: #099; }
 
-/*===================================================
-  B A S E
-===================================================*/
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility; }
-
-body, h1, h2, h3, h4, p, small, blockquote {
-  margin: 0;
-  padding: 0; }
-
-h1, h2, h3, h4, p, small, blockquote,
-.highlight {
-  margin-bottom: 1rem; }
-
-body {
-  font: 400 16px/1.563rem "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #1a1c23;
-  background-color: #fdfdfd;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal; }
-
-/*===================================================
-  S P E C I A L
-===================================================*/
 code {
   color: #007FFF; }
 

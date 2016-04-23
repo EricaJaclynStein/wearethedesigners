@@ -1,16 +1,30 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
 body {
   box-sizing: border-box;
+  background-color: $background-color;
+  color: $text-color;
   padding: 0;
   margin: 0;
-  background: #fff;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
 }
 
-pre, hr, dl, dd, ol, ul, figure {
+body, h1, h2, h3, h4, p, small, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
 
-pre, ul, ol, dl, figure,
+h1, h2, h3, h4, p, small, blockquote, pre, ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $base-spacing;
 }

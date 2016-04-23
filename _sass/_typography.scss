@@ -1,38 +1,3 @@
-/*===================================================
-  B A S E
-===================================================*/
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-}
-
-body, h1, h2, h3, h4, p, small, blockquote {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, p, small, blockquote,
-%vertical-rhythm {
-  margin-bottom: $base-spacing;
-}
-
-body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-}
-
-
-/*===================================================
-  S P E C I A L
-===================================================*/
 code {
   color: #007FFF;
 }
