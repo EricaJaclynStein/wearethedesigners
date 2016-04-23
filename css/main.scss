@@ -3,52 +3,62 @@
 @charset "utf-8";
 
 
-/*===================================================
-  F O N T S
-===================================================*/
+
+/* F O N T S  –––––––––––––––––––––––––––––––––––––*/
+
 $base-font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $base-font-weight: 400;
 
 
-/*===================================================
-  T Y P E S C A L E (PERFECT FOURTH)
-===================================================*/
-$type-unit: 1.333;
-$type-ratio: 3 / 4;
 
-$small-font-size: $type-ratio;
-$base-font-size:  1rem;
-$h4: $base-font-size * $type-unit;
-$h3: $h4 * $type-unit;
-$h2: $h3 * $type-unit;
-$h1: $h2 * $type-unit;
-$title: $h1 * $type-unit;
+/* T Y P E S C A L E ––––––––––––––––––––––––––––––*/
 
-$base-line-height:    1.4rem;
+$type-unit:         1.25;
+$type-ratio:        4 / 5;
+$large-font-size:   1.25rem;
+$base-font-size:    16px;
+$small-font-size:   0.8rem;
+
+$h4:      1.25rem;
+$h3:      1.563rem;
+$h2:      1.953rem;
+$h1:      2.441rem;
+$title:   3.052rem;
+
+$base-line-height:  1.563rem;
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––
+modularscale.com
+Major Third Ratio
+–––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 
-/*===================================================
-  C O L O R S
-===================================================*/
+
+/* C O L O R S ––––––––––––––––––––––––––––––––––––*/
+
 $text-color:       #1a1c23;
 $alt-text-color:   #fdfdfd;
 $background-color: #fdfdfd;
 
-$redstar:     #FF0038;
-$cosmic:      #9f82ff;
-$solaris:     #7fcaff;
-$nebula:      #00ca8d;
-$supernova:   #12E3DB;
-$cantaloupe:  #ffcaa9;
-$mercury:     #c7cbd9;
-$iron:        #424858;
-$tungsten:    #252830;
-$deepspace:   #1a1c23;
+$redstar:          #FF0038;
+$cosmic:           #9f82ff;
+$solaris:          #7fcaff;
+$nebula:           #00ca8d;
+$supernova:        #12E3DB;
+$cantaloupe:       #ffcaa9;
+
+$mercury:          #c7cbd9;
+$silver:           #9da4bf;
+$nickel:           #6b717d;
+$steel:            #5c6370;
+$iron:             #424858;
+$tungsten:         #252830;
+$deepspace:        #1a1c23;
 
 
-/*===================================================
-  R E S P O N D
-===================================================*/
+
+/* R E S P O N D  –––––––––––––––––––––––––––––––––*/
+
 $bp-sm-hand:  480px;
 $bp-lg-hand:  568px;
 $bp-sm-lap:   768px;
@@ -66,9 +76,9 @@ $content-width: 800px;
 $base-spacing:  1rem;
 
 
-/*===================================================
-  I M P O R T S
-===================================================*/
+
+/* I M P O R T  –––––––––––––––––––––––––––––––––––*/
+
 @import
   "base",
   "flexbox",

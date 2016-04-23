@@ -5,17 +5,21 @@ permalink: /patterns/
 ---
 
 <div class="row center-xs">
-  <div class="test-svg">
-    <svg>
-      <mask id="mask">
-        <text x="50%" y="50%" dy="25%" class="text-mask">Oo</text>
-      </mask>
-      <g mask="url(#mask)">
-        <image xlink:href="http://41.media.tumblr.com/52b47b77157f815be7f9441474a90cbf/tumblr_ntt2zycm2a1rkizt2o1_1280.jpg" width="100%" height="100%"/>
-      </g>
-    </svg>
+  <div class="col-xs-12">
+    <div class="text">
+      <svg>
+       <defs>
+         <mask id="mask" x="0" y="0" width="100%" height="100%" >
+           <text class="tunes-title" x="50%" y="0" dy="1em">ptrnz</text>
+           <text class="tunes-subtitle" x="50%" y="0" dy="8em">deez 4 u</text>
+         </mask>
+        </defs>
+        <image id="base" x="0" y="0" width="100%" height="100%" xlink:href="http://41.media.tumblr.com/52b47b77157f815be7f9441474a90cbf/tumblr_ntt2zycm2a1rkizt2o1_1280.jpg"/>
+      </svg>
+    </div>
   </div>
 </div>
+
 <div class="row">
   {% for patterns in site.data.patterns %}
   <div class="no-gutters col-xs-6 col-sm-4 col-md-3 col-lg-2">

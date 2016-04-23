@@ -39,8 +39,6 @@ svg {
   }
 }
 
-//////////////////////////////////////////
-
 .test-svg {
   position: fixed;
   top: 0;
@@ -117,10 +115,15 @@ svg {
   }
 
   text {
-    font-family: $base-font-family;
-    font-size: $h4;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.85rem;
     font-weight: bold;
+
+    // CMYK text effect
     fill: #fff;
+    text-shadow:  0.15rem -0.15rem rgba(magenta, 0.75),
+                 -0.15rem -0.15rem rgba(cyan, 0.75),
+                  0        0.25rem  rgba(yellow, 0.75);
   }
 }
 
