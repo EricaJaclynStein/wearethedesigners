@@ -54,29 +54,29 @@ a {
   text-decoration: none;
 
   &:hover {
-    border-bottom: 3px solid $cantaloupe;
+    border-bottom: 3px solid $cosmic;
     padding: 0.10rem;
     text-decoration: none;
   }
 }
 
 pre, code {
-  font-size: $base-font-size;
-  border: 1px solid $mercury;
+  font-size: $small-font-size;
+  border: transparent;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: $iron;
   line-height: $base-line-height;
   white-space: pre;
   word-wrap: normal;
 }
 
 code {
-  color: #007FFF;
-  padding: 1px 5px;
+  color: $alt-text-color;
+  padding: 0.25rem 0.5rem;
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 0.5rem 1rem;
   overflow-x: auto;
 
   > code {

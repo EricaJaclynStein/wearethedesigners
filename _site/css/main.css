@@ -54,25 +54,25 @@ a {
   padding: 0.10rem;
   text-decoration: none; }
   a:hover {
-    border-bottom: 3px solid #ffcaa9;
+    border-bottom: 3px solid #9f82ff;
     padding: 0.10rem;
     text-decoration: none; }
 
 pre, code {
-  font-size: 16px;
-  border: 1px solid #c7cbd9;
+  font-size: 0.8rem;
+  border: transparent;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: #424858;
   line-height: 1.563rem;
   white-space: pre;
   word-wrap: normal; }
 
 code {
-  color: #007FFF;
-  padding: 1px 5px; }
+  color: #fdfdfd;
+  padding: 0.25rem 0.5rem; }
 
 pre {
-  padding: 8px 12px;
+  padding: 0.5rem 1rem;
   overflow-x: auto; }
   pre > code {
     border: 0;
@@ -1402,7 +1402,6 @@ img {
 
 .hero {
   box-sizing: border-box;
-  border-bottom: 1px solid #c7cbd9;
   padding: 1rem; }
 
 .hero-headline {
@@ -1418,7 +1417,7 @@ img {
 .hero-copy {
   font-size: 1rem;
   margin-bottom: 1rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   text-align: center; }
 
 .button {
