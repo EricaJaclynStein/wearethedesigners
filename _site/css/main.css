@@ -1,13 +1,11 @@
 @charset "UTF-8";
-/* F O N T S  –––––––––––––––––––––––––––––––––––––*/
-/* T Y P E S C A L E ––––––––––––––––––––––––––––––*/
-/*–––––––––––––––––––––––––––––––––––––––––––––––––
-modularscale.com
-Major Third Ratio
-–––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* F O N T + T Y P E S C A L E –––––––––––––––––––––––*/
+/*–––––––––––––––––––––––––––––
+modularscale.com // Major Third Ratio
+––––––––––––––––––––––––––––––*/
 /* C O L O R S ––––––––––––––––––––––––––––––––––––*/
-/* R E S P O N D  –––––––––––––––––––––––––––––––––*/
-/* I M P O R T  –––––––––––––––––––––––––––––––––––*/
+/* R E S P O N S I V E ––––––––––––––––––––––––––––––*/
+/* I M P O R T ––––––––––––––––––––––––––––––––––––*/
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1084,7 +1082,6 @@ svg {
     text-shadow: 0.15rem -0.15rem rgba(255, 0, 255, 0.75), -0.15rem -0.15rem rgba(0, 255, 255, 0.75), 0 0.25rem rgba(255, 255, 0, 0.75); }
 
 .pattern-svg {
-  -webkit-align-items: flex-start;
   -ms-align-items: flex-start;
   align-items: flex-start;
   display: block;

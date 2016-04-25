@@ -4,7 +4,7 @@
 
 
 
-/* F O N T S  –––––––––––––––––––––––––––––––––––––*/
+/* F O N T + T Y P E S C A L E –––––––––––––––––––––––*/
 
 $base-font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $serif-font-family: Georgia, serif;
@@ -12,29 +12,21 @@ $serif-font-family: Georgia, serif;
 $base-font-weight: 400;
 $bold-font-weight: 700;
 
-
-
-/* T Y P E S C A L E ––––––––––––––––––––––––––––––*/
+/*–––––––––––––––––––––––––––––
+modularscale.com // Major Third Ratio
+––––––––––––––––––––––––––––––*/
 
 $type-unit:         1.25;
 $type-ratio:        4 / 5;
 $large-font-size:   1.25rem;
 $base-font-size:    16px;
 $small-font-size:   0.8rem;
-
-$h4:      1.25rem;
-$h3:      1.563rem;
-$h2:      1.953rem;
-$h1:      2.441rem;
-$title:   3.052rem;
-
+$h4:                1.25rem;
+$h3:                1.563rem;
+$h2:                1.953rem;
+$h1:                2.441rem;
+$title:             3.052rem;
 $base-line-height:  1.563rem;
-
-/*–––––––––––––––––––––––––––––––––––––––––––––––––
-modularscale.com
-Major Third Ratio
-–––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
 
 
 /* C O L O R S ––––––––––––––––––––––––––––––––––––*/
@@ -59,15 +51,17 @@ $tungsten:         #252830;
 $deepspace:        #1a1c23;
 
 
+/* R E S P O N S I V E ––––––––––––––––––––––––––––––*/
 
-/* R E S P O N D  –––––––––––––––––––––––––––––––––*/
+$content-width: 800px;
+$base-spacing:  1rem;
 
-$bp-sm-hand:  480px;
-$bp-lg-hand:  568px;
-$bp-sm-lap:   768px;
-$bp-lg-lap:   1024px;
-$bp-sm-desk:  1440px;
-$bp-lg-desk:  2560px;
+$bp-sm-hand:    480px;
+$bp-lg-hand:    568px;
+$bp-sm-lap:     768px;
+$bp-lg-lap:     1024px;
+$bp-sm-desk:    1440px;
+$bp-lg-desk:    2560px;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
@@ -75,12 +69,8 @@ $bp-lg-desk:  2560px;
   }
 }
 
-$content-width: 800px;
-$base-spacing:  1rem;
 
-
-
-/* I M P O R T  –––––––––––––––––––––––––––––––––––*/
+/* I M P O R T ––––––––––––––––––––––––––––––––––––*/
 
 @import
   "base",
