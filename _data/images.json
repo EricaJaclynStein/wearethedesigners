@@ -10,11 +10,6 @@
       "credit": "http://www.florenttanet.fr/L-OFFICIEL-7"
     },
     {
-      "name": "florenttanet–02",
-      "image": "/assets/florenttanet–02.jpg",
-      "credit": "http://www.florenttanet.fr/L-OFFICIEL-7"
-    },
-    {
       "name": "florenttanet–03",
       "image": "/assets/florenttanet–03.jpg",
       "credit": "http://www.florenttanet.fr/L-OFFICIEL-7"
@@ -142,6 +137,11 @@
     {
       "name": "florenttanet–28",
       "image": "/assets/florenttanet–28.jpg",
+      "credit": "http://www.florenttanet.fr/L-OFFICIEL-7"
+    },
+    {
+      "name": "florenttanet–29",
+      "image": "/assets/florenttanet–29.jpg",
       "credit": "http://www.florenttanet.fr/L-OFFICIEL-7"
     }
 ]

@@ -5,6 +5,19 @@ modularscale.com // Major Third Ratio
 ––––––––––––––––––––––––––––––*/
 /* C O L O R S ––––––––––––––––––––––––––––––––––––*/
 /* R E S P O N S I V E ––––––––––––––––––––––––––––––*/
+/* F L E X B O X ––––––––––––––––––––––––––––––––––––*/
+.item {
+  -webkit-box-flex: 1 200px;
+  -moz-box-flex: 1 200px;
+  -webkit-flex: 1 200px;
+  -ms-flex: 1 200px;
+  flex: 1 200px;
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2; }
+
 /* I M P O R T ––––––––––––––––––––––––––––––––––––*/
 html {
   -webkit-font-smoothing: antialiased;
@@ -144,9 +157,100 @@ h4 {
   padding-right: 2rem;
   padding-left: 2rem; }
 
-/*===================================================
-  SET ROWS
-===================================================*/
+/* F L E X  P R O P E R T I E S –––––––––––––––––––––––*/
+.item.align-self-auto {
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto; }
+
+.item.align-self-start {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.item.align-self-end {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.item.align-self-center {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.item.align-self-baseline {
+  -webkit-align-self: baseline;
+  -ms-flex-item-align: baseline;
+  align-self: baseline; }
+
+.item.align-self-stretch {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch; }
+
+.flex-start {
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  text-align: start; }
+
+.flex-center {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center; }
+
+.flex-end {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  text-align: end; }
+
+.flex-top {
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+  align-items: flex-start; }
+
+.flex-middle {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center; }
+
+.flex-bottom {
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  align-items: flex-end; }
+
+.flex-around {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.flex-between {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
+
+.flex-first {
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  -webkit-box-ordinal-group: 0;
+  order: -1; }
+
+.flex-last {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  -webkit-box-ordinal-group: 2;
+  order: 1; }
+
+/* R O W S + C O L U M N S –––––––––––––––––––––––*/
 .row {
   box-sizing: border-box;
   display: -webkit-flex;
@@ -175,9 +279,6 @@ h4 {
   -webkit-box-direction: reverse;
   flex-direction: row-reverse; }
 
-/*===================================================
-  SET COLUMNS
-===================================================*/
 .col.reverse {
   -webkit-flex-direction: column-reverse;
   -ms-flex-direction: column-reverse;
@@ -1062,25 +1163,6 @@ svg {
     fill: #1a1c23;
     text-anchor: middle; }
 
-.shape-svg {
-  display: block; }
-  .shape-svg > svg {
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    vertical-align: middle; }
-  .shape-svg .shape-mask {
-    fill: white;
-    stroke: white;
-    stroke-width: 1; }
-  .shape-svg text {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.85rem;
-    font-weight: bold;
-    fill: #fff;
-    text-shadow: 0.15rem -0.15rem rgba(255, 0, 255, 0.75), -0.15rem -0.15rem rgba(0, 255, 255, 0.75), 0 0.25rem rgba(255, 255, 0, 0.75); }
-
 .pattern-svg {
   -ms-align-items: flex-start;
   align-items: flex-start;
@@ -1381,6 +1463,43 @@ img {
   margin: 0;
   padding: 0;
   overflow: hidden; }
+
+.shape-svg {
+  display: block; }
+  .shape-svg > svg {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle; }
+  .shape-svg .shape-mask {
+    fill: white;
+    stroke: white;
+    stroke-width: 1; }
+  .shape-svg text {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.85rem;
+    font-weight: bold;
+    fill: #fff;
+    text-shadow: 0.15rem -0.15rem rgba(255, 0, 255, 0.75), -0.15rem -0.15rem rgba(0, 255, 255, 0.75), 0 0.25rem rgba(255, 255, 0, 0.75); }
+
+.image-grid-item {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  .image-grid-item > svg {
+    width: auto;
+    height: auto;
+    vertical-align: middle; }
+
+.flex-grid-image {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  display: block;
+  overflow: hidden;
+  vertical-align: middle; }
 
 .tag {
   color: #000;

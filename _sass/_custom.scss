@@ -166,6 +166,58 @@
   overflow: hidden;
 }
 
+.shape-svg {
+  display: block;
+
+  > svg {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+  }
+
+  .shape-mask {
+    fill: white;
+    stroke: white;
+    stroke-width: 1;
+  }
+
+  text {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.85rem;
+    font-weight: bold;
+
+    // CMYK text effect
+    fill: #fff;
+    text-shadow:  0.15rem -0.15rem rgba(magenta, 0.75),
+                 -0.15rem -0.15rem rgba(cyan, 0.75),
+                  0        0.25rem  rgba(yellow, 0.75);
+  }
+}
+
+.image-grid-item {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  > svg {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+  }
+}
+
+.flex-grid-image {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  display: block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
 .tag {
   color: #000;
   font-weight: normal;

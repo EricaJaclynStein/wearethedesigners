@@ -97,36 +97,6 @@ svg {
   }
 }
 
-.shape-svg {
-  display: block;
-
-  > svg {
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    vertical-align: middle;
-  }
-
-  .shape-mask {
-    fill: white;
-    stroke: white;
-    stroke-width: 1;
-  }
-
-  text {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.85rem;
-    font-weight: bold;
-
-    // CMYK text effect
-    fill: #fff;
-    text-shadow:  0.15rem -0.15rem rgba(magenta, 0.75),
-                 -0.15rem -0.15rem rgba(cyan, 0.75),
-                  0        0.25rem  rgba(yellow, 0.75);
-  }
-}
-
 .pattern-svg {
   -ms-align-items: flex-start;
   align-items: flex-start;
