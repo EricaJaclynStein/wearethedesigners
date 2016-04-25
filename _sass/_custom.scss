@@ -273,6 +273,8 @@
   text-align: left;
 }
 
+/* F O O T E R ––––––––––––––––––––––––––––––––––––*/
+
 .site-footer {
     padding: $base-spacing 0;
 }
@@ -287,6 +289,9 @@
   text-align: right;
 }
 
+
+/* T U N E S ––––––––––––––––––––––––––––––––––––––*/
+
 .music-player {
   position: relative;
   margin: 0 auto;
@@ -296,6 +301,7 @@
 
 
 /* D E V I C E S ––––––––––––––––––––––––––––––––––*/
+
 
 @media only screen and (min-width: $bp-sm-lap) {
   body {

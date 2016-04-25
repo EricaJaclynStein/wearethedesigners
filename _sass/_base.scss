@@ -24,8 +24,13 @@ body, h1, h2, h3, h4, h5, h6, p, small, blockquote, pre, hr, dl, dd, ol, ul, fig
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 p, small, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
-  margin-bottom: $base-spacing;
+h1, h2, h3, h4, h5, h6 p, small, blockquote, pre, ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 p, small, blockquote {
+  margin-bottom: 1rem;
 }
 
 img {
@@ -34,10 +39,10 @@ img {
 }
 
 ul, ol {
-  margin-bottom: $base-spacing;
+  margin-bottom: 0.25rem;
 
   li {
-    margin-bottom: $base-spacing;
+    margin-bottom: 0.25rem;
   }
 }
 

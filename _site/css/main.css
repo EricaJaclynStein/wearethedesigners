@@ -31,7 +31,11 @@ body, h1, h2, h3, h4, h5, h6, p, small, blockquote, pre, hr, dl, dd, ol, ul, fig
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, h5, h6 p, small, blockquote, pre, ul, ol, dl, figure, .highlight {
+h1, h2, h3, h4, h5, h6 p, small, blockquote, pre, ul, ol, dl, figure,
+.highlight {
+  margin-bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 p, small, blockquote {
   margin-bottom: 1rem; }
 
 img {
@@ -39,9 +43,9 @@ img {
   vertical-align: middle; }
 
 ul, ol {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.25rem; }
   ul li, ol li {
-    margin-bottom: 1rem; }
+    margin-bottom: 0.25rem; }
 
 a {
   border-bottom: 3px solid #424858;
@@ -1472,6 +1476,7 @@ img {
   padding: 1rem 3rem;
   text-align: left; }
 
+/* F O O T E R ––––––––––––––––––––––––––––––––––––*/
 .site-footer {
   padding: 1rem 0; }
 
@@ -1483,6 +1488,7 @@ img {
   position: relative;
   text-align: right; }
 
+/* T U N E S ––––––––––––––––––––––––––––––––––––––*/
 .music-player {
   position: relative;
   margin: 0 auto;
