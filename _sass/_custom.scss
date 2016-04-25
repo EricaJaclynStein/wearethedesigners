@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-.home {
+.cover {
   box-sizing: border-box;
   height: 100vh;
 
@@ -267,16 +267,6 @@
   text-align: center;
 }
 
-.col-post {
-  padding: 3rem 0 1rem 0;
-}
-
-.post-title-decor {
-  background: #000;
-  height: 0.5rem;
-  width: 230px;
-}
-
 .post-content {
   color: $alt-text-color;
   padding: $base-spacing 3rem;
@@ -293,21 +283,8 @@
 }
 
 .footer-row {
-  box-sizing: border-box;
   position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-
-.col-auto {
-  height: auto;
-  padding: $base-spacing;
-}
-
-.col-total {
-  background: $deepspace;
-  height: 100vh;
-  padding: $base-spacing;
+  text-align: right;
 }
 
 .music-player {

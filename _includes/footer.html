@@ -4,14 +4,10 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="footer-row">
           <ul class="footer-list">
-            <li>
-              <small><a href="{{ site.baseurl }}/">Home</a></small>
-            </li>
+            <li><small><a href="{{ site.baseurl }}/">Home</a></small></li>
             {% for my_page in site.pages %}
             {% if my_page.title %}
-            <li>
-              <small><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></small>
-            </li>
+            <li><small><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></small></li>
             {% endif %}
             {% endfor %}
             <small>{{ site.description }}</small>

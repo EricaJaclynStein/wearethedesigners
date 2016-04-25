@@ -64,6 +64,7 @@ pre, code {
   word-wrap: normal; }
 
 code {
+  color: #007FFF;
   padding: 1px 5px; }
 
 pre {
@@ -77,6 +78,39 @@ pre {
 strong {
   font-weight: 700; }
 
+small {
+  font-size: 0.8rem;
+  line-height: 1; }
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  line-height: 1.1;
+  padding-top: 1rem; }
+
+h1 {
+  font-size: 2.441rem; }
+
+h2 {
+  font-size: 1.953rem; }
+
+h3 {
+  font-size: 1.563rem; }
+
+h4 {
+  font-size: 1.25rem; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: -webkit-calc(2.441rem * (0.8));
+    font-size: calc(2.441rem * (0.8)); }
+
+  h2 {
+    font-size: -webkit-calc(1.953rem * (0.8));
+    font-size: calc(1.953rem * (0.8)); }
+
+  h3 {
+    font-size: -webkit-calc(1.563rem * (0.8));
+    font-size: calc(1.563rem * (0.8)); } }
 .canvas {
   margin-right: auto;
   margin-left: auto;
@@ -1204,42 +1238,6 @@ img {
   .highlight .il {
     color: #099; }
 
-code {
-  color: #007FFF; }
-
-small {
-  font-size: 0.8rem;
-  line-height: 1; }
-
-h1, h2, h3, h4 {
-  font-weight: 400;
-  line-height: 1.1;
-  padding-top: 1rem; }
-
-h1 {
-  font-size: 2.441rem; }
-
-h2 {
-  font-size: 1.953rem; }
-
-h3 {
-  font-size: 1.563rem; }
-
-h4 {
-  font-size: 1.25rem; }
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: -webkit-calc(2.441rem * (0.8));
-    font-size: calc(2.441rem * (0.8)); }
-
-  h2 {
-    font-size: -webkit-calc(1.953rem * (0.8));
-    font-size: calc(1.953rem * (0.8)); }
-
-  h3 {
-    font-size: -webkit-calc(1.563rem * (0.8));
-    font-size: calc(1.563rem * (0.8)); } }
 #gradient {
   width: 100%;
   height: 100%;
@@ -1256,7 +1254,7 @@ h4 {
   padding: 0;
   margin: 0; }
 
-.home {
+.cover {
   box-sizing: border-box;
   height: 100vh;
   display: -webkit-flex;
@@ -1469,14 +1467,6 @@ h4 {
   overflow: hidden;
   text-align: center; }
 
-.col-post {
-  padding: 3rem 0 1rem 0; }
-
-.post-title-decor {
-  background: #000;
-  height: 0.5rem;
-  width: 230px; }
-
 .post-content {
   color: #fdfdfd;
   padding: 1rem 3rem;
@@ -1490,19 +1480,8 @@ h4 {
   list-style: none; }
 
 .footer-row {
-  box-sizing: border-box;
   position: relative;
-  overflow: hidden;
-  text-align: center; }
-
-.col-auto {
-  height: auto;
-  padding: 1rem; }
-
-.col-total {
-  background: #1a1c23;
-  height: 100vh;
-  padding: 1rem; }
+  text-align: right; }
 
 .music-player {
   position: relative;

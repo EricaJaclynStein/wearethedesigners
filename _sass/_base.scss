@@ -66,6 +66,7 @@ pre, code {
 }
 
 code {
+  color: #007FFF;
   padding: 1px 5px;
 }
 
@@ -82,6 +83,50 @@ pre {
 
 strong {
   font-weight: $bold-font-weight;
+}
+
+small {
+  font-size: $small-font-size;
+  line-height: 1;
+}
+
+h1, h2, h3, h4 {
+  font-weight: $base-font-weight;
+  line-height: 1.1;
+  padding-top: $base-spacing;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h4 {
+  font-size: $h4;
+}
+
+@include media-query($bp-sm-lap) {
+  h1 {
+    font-size: -webkit-calc(#{$h1} * (#{$type-ratio}));
+    font-size:         calc(#{$h1} * (#{$type-ratio}));
+  }
+
+  h2 {
+    font-size: -webkit-calc(#{$h2} * (#{$type-ratio}));
+    font-size:         calc(#{$h2} * (#{$type-ratio}));
+  }
+
+  h3 {
+    font-size: -webkit-calc(#{$h3} * (#{$type-ratio}));
+    font-size:         calc(#{$h3} * (#{$type-ratio}));
+  }
 }
 
 .canvas {

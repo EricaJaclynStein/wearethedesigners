@@ -7,15 +7,14 @@
       <div class="row no-gutters">
         <div class="no-gutters col-xs-12 col-sm-4 col-md-6 col-lg-6">
           <div class="post-row col-auto">
-            <h1 class="post-title col-post">{{ page.title }}</h1>
-            <svg class="post-title-decor"></svg>
-            {% include footer.html %}
+            <h1 class="post-title">{{ page.title }}</h1>
           </div>
         </div>
         <div class="no-gutters col-xs-12 col-sm-8 col-md-6 col-lg-6">
-          <div class="post-row col-total">
+          <div class="row">
             <div class="post-content">
               {{ content }}
+              {% include footer.html %}
             </div>
           </div>
         </div>
